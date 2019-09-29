@@ -33,7 +33,7 @@ if not cap.isOpened():
     print("Error opening video stream.")
 
 while cap.isOpened():
-    t1 = time.time()
+    # t1 = time.time()
     ret, frame = cap.read()
     if ret == True:
         frame = frame_transform(frame)
@@ -88,7 +88,7 @@ while cap.isOpened():
         tracking_list = new_tl
         frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
         cv2.imshow("Detections", frame)
-        t2 = time.time()
+        # t2 = time.time()
         # print("fps: ", 1/(t2-t1))
         if cv2.waitKey(25) & 0xFF == ord('q'):
             break
