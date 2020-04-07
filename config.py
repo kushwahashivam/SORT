@@ -1,4 +1,4 @@
-source = "videos/Walking Next to People.MP4"
+# source = "videos/Walking Next to People.MP4"
 # frame_size = (704, 1280)
 source = 0
 frame_size = (480, 640)
